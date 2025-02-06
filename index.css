@@ -521,8 +521,8 @@ position: relative;
         margin-top: 2em;
     }
     .web-image{
- float: left;
- justify-content: flex-start;
+ float: right;
+ justify-content: flex-end;
 width: 19em;
 height: 19em;
 margin-left: 1em;
@@ -540,8 +540,8 @@ margin-left: 1em;
 @media  screen and (min-width: 413px) and (max-width: 668px) {
     .web-image{
         margin-top: -18em;
-        width: 18em;
-        height: 18em;
+        width: 14em;
+        height: 14em;
         float: right;
         margin-right: -8em;
     }
