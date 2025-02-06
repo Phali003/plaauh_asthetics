@@ -503,12 +503,12 @@ position: relative;
     position: relative;
     width: 50vw;
     height: 30em;
-    margin-top: -20em;
-    margin-right: -15em;
+    margin-top: -26em;
+   float: right;
     
 }
 .skills-heading{
-    margin-top: -4em;
+    margin-top: -6em;
 }
 .skills{
     top: -5em;
@@ -562,6 +562,7 @@ margin-left: 1em;
         margin-top: 25em;
     }
 }
+
 @media screen and (min-width: 1354px) {
     .navigation{
         width: 100vw;
@@ -574,7 +575,7 @@ margin-left: 1em;
     height: 30em;
     margin-top: -24em;
     float: right;
-    margin-right: 2em;
+    margin-right: 4em;
     
 }
   
@@ -596,12 +597,11 @@ margin-left: 1em;
         margin-top: -20em;
     }
     .skills-heading{
-        margin-top: -6em;
+        margin-top: -15em;
     }
+   
     .work-info{
         margin-top: -10em;
     }
-    .about{
-        margin-top: -initial;
-    }
+   
 }
