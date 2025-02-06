@@ -560,17 +560,44 @@ margin-left: 1em;
         margin-top: 25em;
     }
 }
-@media screen and (min-width: 1385px) {
+@media screen and (min-width: 1365px) {
     .navigation{
         width: 100vw;
     }
-    .description{
-        width: 70vw;
-        
+   
+.description{
+    display: inline-block;
+    position: relative;
+    width: 52vw;
+    height: 30em;
+    margin-top: -24em;
+    
+}
+  
+.phali-image{
+    position: relative;
+        z-index: -1111;
+        width: 25em;
+        height: 25em;
+        display: block;
+        margin-top: 10em;
+    }
+    
+    .web-image{
+        width: 30em;
+        height: 30em;
         float: right;
         justify-content: flex-end;
-        z-index: inherit;
-        margin-left: 13em;
-
+        margin-right: 2em;
+        margin-top: -20em;
+    }
+    .skills-heading{
+        margin-top: -6em;
+    }
+    .work-info{
+        margin-top: -10em;
+    }
+    .about{
+        margin-top: 6em;
     }
 }
