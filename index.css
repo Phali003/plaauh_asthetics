@@ -28,14 +28,14 @@ body{
     
 }
 .about-section{
-    padding-top: 5em;
+    padding-top: 7em;
 }
 
 .skills-heading{
-    padding-top: 3em;
+    padding-top: 5em;
 }
 .work-info{
-    padding-top: 5em;
+    padding-top: 7em;
 }
 ol{
    
@@ -373,7 +373,7 @@ i{
     .intro-content{
         font-size: 22px;
         padding-top: 4em;
-        display:inline-block ;
+        display:block ;
         z-index: -1;
     }
     .animated-text{
@@ -407,19 +407,17 @@ i{
 .skills-heading{
     margin-top: 0;
 }
+.description{
+    width: 100vw;
+}
 
 }
 
 @media screen and (min-width: 375px) and (max-width: 400px) {
-    .skills{
-        margin-top:  10em ;
-        display: block;
-        position: relative;
-    }
-    
+   
     
 }
-@media screen and (min-width: 375px) and (max-width:667px){
+@media screen and (min-width: 375px) and (max-width:412px){
 .navigation{
     width: 100vw;
     height: 5.5em;
@@ -464,14 +462,12 @@ ol{
 
 .description{
     width: 100vw;
-    height: 32em;
     display: block;
     position: relative;
 
 
 }
-.skills{
-    margin-top:  1em ;
+.skills-heading{
     display: block;
     position: relative;
 }
@@ -506,4 +502,67 @@ position: relative;
     width: 100vw;
     height: 24em;
 }
+.skills-heading{
+    margin-top: 1em;
+}
+.skills{
+    top: -5em;
+}
+.work-info{
+    margin-top: -10em;
+}
+}
+
+@media screen and (max-width: 412px) {
+    .skills-heading{
+        margin-top: 15em;
+    }
+    .skills{
+        margin-top: 2em;
+    }
+    .web-image{
+ float: left;
+ justify-content: flex-start;
+width: 19em;
+height: 19em;
+margin-left: 1em;
+    }
+    .about-section{
+        margin-top: 6em;
+    }
+    .phali-image{
+        width:17em ;
+        height: 17em;
+        margin-left: 0;
+    }
+}
+
+@media  screen and (min-width: 413px) and (max-width: 668px) {
+    .web-image{
+        margin-top: -18em;
+        width: 18em;
+        height: 18em;
+    }
+    .skills-heading{
+        margin-top: 13em;
+    }
+}
+@media screen and (max-width: 375px) {
+    .skills-heading{
+        margin-top: 25em;
+    }
+}
+@media screen and (min-width: 1385px) {
+    .navigation{
+        width: 100vw;
+    }
+    .description{
+        width: 70vw;
+        
+        float: right;
+        justify-content: flex-end;
+        z-index: inherit;
+        margin-left: 13em;
+
+    }
 }
