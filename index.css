@@ -490,7 +490,7 @@ position: relative;
     float: right;
     justify-content: flex-end;
     margin-right: 7em;
-    margin-top: -10em;
+    margin-top: -20em;
 }
 .about-section{
     padding-top: 7em;
@@ -504,7 +504,7 @@ position: relative;
     width: 50vw;
     height: 30em;
     margin-top: -20em;
-    margin-right: -15em;
+    margin-right: -20em;
     
 }
 .skills-heading{
