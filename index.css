@@ -542,9 +542,14 @@ margin-left: 1em;
         margin-top: -18em;
         width: 18em;
         height: 18em;
+        float: right;
+        margin-right: -8em;
     }
     .skills-heading{
         margin-top: 13em;
+    }
+    .navigation{
+        width: 100vw;
     }
 }
 @media screen and (max-width: 375px) {
