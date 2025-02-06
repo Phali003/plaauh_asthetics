@@ -487,8 +487,8 @@ position: relative;
 .web-image{
     width: 28rem;
     height: 28em;
-    float: right;
-    justify-content: flex-end;
+    margin-left: 2em;
+    justify-content: center;
     margin-right: 7em;
     margin-top: -20em;
 }
@@ -504,7 +504,7 @@ position: relative;
     width: 50vw;
     height: 30em;
     margin-top: -20em;
-    margin-right: -20em;
+    margin-right: -15em;
     
 }
 .skills-heading{
