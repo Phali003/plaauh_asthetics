@@ -479,16 +479,17 @@ ol{
 .phali-image{
 position: relative;
     z-index: -1111;
-    width: 20em;
-    height: 20em;
+    width: 25em;
+    height: 25em;
     display: block;
 }
 
 .web-image{
-    width: 20rem;
-    height: 20em;
+    width: 28rem;
+    height: 28em;
     float: right;
     justify-content: flex-end;
+    margin-right: 7em;
 }
 .about-section{
     padding-top: 7em;
@@ -497,13 +498,15 @@ position: relative;
   
 }
 .description{
-    display: block;
+    display: inline-block;
     position: relative;
-    width: 100vw;
-    height: 24em;
+    width: 50vw;
+    height: 30em;
+    margin-top: -20em;
+    
 }
 .skills-heading{
-    margin-top: 1em;
+    margin-top: -4em;
 }
 .skills{
     top: -5em;
