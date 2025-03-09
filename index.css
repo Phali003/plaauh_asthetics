@@ -21,7 +21,7 @@ html {
 body {
   overflow-x: hidden;
   background-position: center;
-  background-image: url(images/bg_image.avif);
+  background-color: #00ffe0;
 }
 
 .navigation {
@@ -67,35 +67,98 @@ body {
   text-decoration: none;
   color: var(--primary-color);
 }
-
 .top-content {
-  position: relative;
+  margin-top: 6em;
+  float: inline-start;
+  display: block;
+  width: 40vw;
   height: auto;
-  width: 100vw;
-  margin: 0;
-  background-color: var(--primary-color);
+}
+.intro-content {
+  font-size: xx-large;
+  color: var(--secondary-color);
+  padding-left: 0.5em;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+@media (max-width: 768px) {
+  .intro-content {
+    white-space: normal;
+    word-break: keep-all;
+  }
+}
+
+.logo-image {
+  margin-top: 5em;
+  max-width: 50vw;
+  height: 50vh;
+  float: inline-end;
+  display: block;
+  position: relative;
+  margin-right: 1em;
+}
+.plaauh-image {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+}
+.about-section {
+  margin-top: 25em;
   display: block;
 }
-
-.top-building-mockup {
-  width: 100vw;
-  max-width: 100vh;
-  height: 80vh;
-  border-radius: 2em;
-  float: inline-end;
-  display: inline;
-  margin-left: 40em;
-  margin-top: -33em;
-}
-.brand-identity {
-  font-size: larger;
-  font-weight: 600;
+.about-section p {
   display: inline-block;
-  margin-top: 1em;
+  position: absolute;
+  font-size: xx-large;
+  padding-left: 1em;
 }
-.download-identity {
-  color: #fe00a7;
+.skills-section {
+  margin-top: 3em;
+}
+
+.skills-list {
+  display: flex;
+  align-items: flex-start;
+}
+
+.skills-items {
+  flex: 1;
+  margin-right: 2%;
+}
+
+.skills-section img {
+  width: 50em;
+  height: 26em;
+  border-radius: 2em;
+  margin-top: -20em;
+  float: inline-end;
+}
+
+.brand-identity {
+  margin-top: 6em;
+}
+.work-section img {
+  width: 20em;
+  gap: 1em;
+  padding-left: 3em;
+}
+.identity-description,
+.project-description {
+  color: var(--secondary-color);
   font-size: x-large;
+}
+.identity-description h2,
+.projects-title,
+.heading {
+  color: var(--quaternary-color);
+  font-size: 1.6em;
+}
+.testimonial-name {
+  text-decoration: underline;
+  color: var(--text-color);
+  font-style: italic;
 }
 .container {
   padding: 0;
@@ -266,99 +329,6 @@ body {
   }
 }
 
-.logo-image {
-  width: 50vw;
-  max-width: 50vh;
-  height: 50vh;
-  border-radius: 2em;
-  margin-top: -1em;
-  margin-right: -20em;
-}
-
-.plaauh-image {
-  width: 100%;
-  max-width: 22em;
-  height: auto;
-  border-radius: 50%;
-  position: relative;
-  margin-top: 3ch;
-}
-
-.intro-content {
-  color: var(--accent-color);
-  font-size: xx-large;
-  width: 100%;
-  max-width: 40vw;
-  height: auto;
-  padding-top: 4em;
-  padding-left: 1em;
-  display: flex;
-}
-
-.intro-content p {
-  width: 100vw;
-  height: auto;
-  position: relative;
-  top: 6%;
-  left: 20%;
-  transform: translate(-15%, -6%);
-  z-index: 2;
-  margin-top: 0;
-  color: var(--secondary-color);
-  font-weight: 700;
-  text-align: center;
-}
-
-.about-section {
-  margin-top: 3rem;
-  margin-left: 3em;
-  display: block;
-  width: 100vw;
-  height: auto;
-  margin-left: -8em;
-}
-.about-me {
-  color: var(--text-color);
-  font-size: xx-large;
-  margin-top: 2em;
-  position: relative;
-  display: block;
-}
-.about {
-  font-size: x-large;
-  color: var(--tertiary-color);
-  margin-top: 1em;
-  z-index: 2;
-  text-decoration: overline 3px solid black;
-}
-
-.plaauh {
-  top: 21em;
-  left: 5em;
-  position: absolute;
-  border-radius: 50%;
-}
-.skills-heading {
-  padding-top: 5em;
-  color: var(--accent-color);
-}
-
-.skills-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 30em;
-}
-.skills-section h1 {
-  display: block;
-  position: relative;
-  margin-bottom: 1em;
-}
-
-.work-info {
-  padding-top: 7em;
-}
-
 ol {
   cursor: pointer;
   /* padding-right: 25em; */
@@ -460,118 +430,9 @@ a {
   }
 }
 
-.description {
-  z-index: 1;
-  text-wrap: wrap;
-  width: 100%;
-  max-width: 55vw;
-  height: auto;
-  font-size: larger;
-  display: inline-block;
-  position: relative;
-  float: right;
-  color: var(--accent-color);
-  position: relative;
-}
-
-.unique {
-  color: var(--tertiary-color);
-  font-style: italic;
-  z-index: 1;
-  margin-top: -2em;
-}
-
-.intro-description {
-  color: var(--text-color);
-  font-size: larger;
-  font-weight: 800;
-  z-index: 1;
-  position: relative;
-  display: block;
-}
-
-.skills-section {
-  position: absolute;
-  display: inline-block;
-}
-.skills-section h1 {
-  color: var(--quaternary-color);
-  display: block;
-  position: relative;
-}
-
-i {
-  color: rgb(0, 132, 255);
-  font-size: 7em;
-  gap: 2em;
-  padding: 0.2em;
-}
-
-.icon-names {
-  font-size: medium;
-  color: rgb(0, 195, 255);
-}
-.work-section img {
-  border-radius: 10%;
-  margin-left: -8em;
-}
-
-.work-section {
-  color: var(--tertiary-color);
-  font-size: larger;
-  font-weight: 800;
-  position: relative;
-  display: block;
-  margin-top: -16em;
-}
-.testimonials {
-  margin-top: -2em;
-}
-.projects-title,
-.testimonial-header,
-.contacts-section,
-.work-header,
-.contact-title {
-  color: #fe00a7;
-  text-align: center;
-  font-size: xx-large;
-  margin-top: -10px;
-}
-.projects-title {
-  margin-top: -10em;
-}
-.contact-description {
-  color: var(--tertiary-color);
-  font-size: xx-large;
-  font-weight: 500;
-}
-.project-name {
-  font-size: 2em;
-  color: var(--secondary-color);
-}
-.project-description,
-.projects-description {
-  color: var(--tertiary-color);
-  font-size: larger;
-  font-weight: 800;
-  margin-top: 2em;
-}
-.identity-image {
-  border-radius: 2%;
-}
-.brand-identity {
-  color: var(--text-color);
-  font-size: x-large;
-  padding-top: 1.5em;
-  margin-top: 3em;
-}
-.image-container {
-  display: flex;
-  justify-content: center;
-}
 #contact {
   padding: 2em;
-  background-color: #f9f9f9;
+  background-color: var(--quaternary-color);
   text-align: center;
   background-image: url(images/bg_image.avif);
 }
@@ -582,10 +443,13 @@ i {
 }
 
 .contact-description {
-  font-size: 1.2em;
+  font-size: 1.6em;
   margin-bottom: 1.5em;
 }
-
+.contact-title {
+  color: var(--accent-color);
+  font-size: xx-large;
+}
 .contact-details {
   display: flex;
   justify-content: space-around;
@@ -608,11 +472,12 @@ i {
 
 .contact-item p {
   font-size: 1.2em;
-  color: var(--text-color);
+  color: white;
+  font-size: x-large;
 }
 
 .contact-item a {
-  color: var(--text-color);
+  color: white;
   text-decoration: none;
 }
 

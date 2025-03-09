@@ -1,177 +1,118 @@
-@media (max-width: 1173px) {
-  .plaauh {
-    width: 40em;
-    height: 40em;
-    border-radius: 50%;
+.navigation,
+.navigation ol,
+.intro-content,
+.logo-image,
+.about-section img,
+.about-section p,
+.identity-description h2,
+.projects-title,
+.heading,
+.skills-section,
+.skills-items,
+.skills-section img,
+.brand-identity,
+.work-section img,
+.plaauh-image {
+  transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+@media (max-width: 678px) {
+  .navigation {
+    width: 90vw;
+    color: red;
+    height: 3em;
+    border-radius: 2px;
+    justify-content: center;
+  }
+  .navigation ol {
+    color: red;
+    font-size: small;
+    margin-bottom: 1.4em;
+  }
+  .intro-content {
+    font-size: x-large;
   }
   .logo-image {
     width: 15em;
-    height: 10em;
-    display: block;
-    margin-top: 5em;
-    margin-left: -14em;
-    margin-bottom: 1em;
-  }
-
-  .work-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    margin-top: -15em;
-  }
-
-  .work-section h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    text-align: center;
-  }
-
-  .skills-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1em;
-    margin-top: 14em;
-    width: 100%;
-  }
-  .brand-identity {
-    margin-top: -1em;
-  }
-
-  .skills-section h1 {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-    text-align: left;
-    word-wrap: break-word;
-    width: 100%;
-  }
-
-  .work-section img {
-    margin-left: 0em;
-    width: 20em;
-    height: 20em;
+    height: 15em;
+    margin-top: 4em;
   }
   .about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    width: 100%;
-    top: -15em;
+    text-align: center;
   }
-
-  .about-section .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .about-section .description {
-    font-size: 1em;
-    text-align: left;
-    word-wrap: break-word;
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }
-
-  .about-section .intro-description {
+  .about-section img {
+    width: 27.5em;
+    height: 27.5em;
     display: block;
-    word-wrap: break-word;
-    width: 100%; /* Ensure the intro-description takes full width */
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  .about-section p {
+    display: block;
+    width: 100%;
+    position: relative;
+    color: green;
+    font-size: x-large;
+    left: -1.2em;
+  }
+  .identity-description h2,
+  .projects-title,
+  .heading {
+    color: var(--quaternary-color);
+    font-size: 1.6em;
+    text-align: center;
+  }
+  .skills-section {
+    position: relative;
+    display: block;
+  }
+  .skills-items {
+    display: block;
+    position: relative;
+  }
+  .skills-section img {
+    display: block;
+    width: 30em;
+    clear: both;
+    margin-top: 3em;
+  }
+  .brand-identity {
+    display: block;
+    position: relative;
+  }
+  .work-section img {
+    justify-content: center;
+    margin-left: -1em;
+    width: 15em;
   }
 }
 
-@media (min-width: 452px) {
-  .navigation {
-    color: #000;
-    width: 130vw;
-    height: 4em;
-    background-color: var(--tertiary-color);
-    margin-left: -10em;
-    transition: 0.15s;
-  }
-
-  .navigation ol {
-    font-size: small;
-  }
-
-  .about {
+@media (min-width: 678px) and (max-width: 1194px) {
+  .skills-section .skills-items {
+    font-size: medium;
     color: blue;
-    margin-top: 0em;
-    margin-left: 6em;
   }
-
-  .plaauh {
-    margin-top: -19em;
-  }
-
-  .about-section,
   .skills-section {
-    display: flex;
-    position: relative;
-    width: 100vw;
-    height: auto;
-  }
-
-  .about img {
-    position: relative;
-    width: 15em;
-    height: 15em;
-    border-radius: 50%;
-    margin-left: 3em;
-  }
-
-  .skills-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1em;
-    width: 100%;
-    top: -20em;
-  }
-
-  .skills-section h1 {
-    font-size: larger;
-    margin-bottom: 1em;
-    text-align: left;
-    word-wrap: break-word;
-    width: 100%;
-  }
-
-  .work-header {
-    margin-top: -4em;
-  }
-  .about-section {
-    width: 100%;
-    height: auto;
     margin-top: 15em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
-
-  .about-section .description {
-    font-size: 1em;
-    text-align: left;
-    word-wrap: break-word;
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
+  .skills-section img {
+    width: 20em;
+    height: 20em;
   }
-
-  .about-section .intro-description {
+  .about-section p {
     display: block;
-    word-wrap: break-word;
-    width: 100%;
+    font-size: x-large;
   }
-  .container {
-    left: 9em;
+  .plaauh-image {
+    width: 25em;
+    height: 25em;
+    margin-left: 5em;
   }
-  .projects-title {
-    margin-top: -1em;
+}
+
+@media (min-width: 830px) and (max-width: 1194px) {
+  .skills-section img {
+    width: 35em;
+    height: 35em;
   }
 }
